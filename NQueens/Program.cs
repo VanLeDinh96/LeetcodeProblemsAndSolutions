@@ -2,11 +2,11 @@
 
 var solution = new Solution();
 int test = solution.TotalNQueens(8);
-for (int n = 1; n <= 8; n++)
-{
-    int result = solution.TotalNQueens(n);
-    Console.WriteLine($"n = {n}, TotalNQueens = {result}");
-}
+//for (int n = 1; n <= 8; n++)
+//{
+//    int result = solution.TotalNQueens(n);
+//    Console.WriteLine($"n = {n}, TotalNQueens = {result}");
+//}
 
 // Expected output:
 // n = 1, TotalNQueens = 1
