@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="NQueens/NQueens.csproj" />
+</Solution>
