@@ -7,7 +7,9 @@ var testCases = new[]
             new { s = "aa", p = "*", expected = true },
             new { s = "cb", p = "?a", expected = false },
             new { s = "adceb", p = "*a*b", expected = true },
-            new { s = "acdcb", p = "a*c?b", expected = false }
+            new { s = "acdcb", p = "a*c?b", expected = false },
+            new { s = "", p = "", expected = true },
+            new { s = "", p = "*", expected = true },
         };
 
 foreach (var test in testCases)
