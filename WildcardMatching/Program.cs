@@ -18,6 +18,8 @@ var testCases = new[]
             new { s = "abc", p = "*a*", expected = true },
             new { s = "abc", p = "*b*", expected = true },
             new { s = "abc", p = "*d*", expected = false },
+            new { s = "mississippi", p = "m*si*pi", expected = true },
+            new { s = "mississippi", p = "m*si*pp", expected = false },
         };
 
 foreach (var test in testCases)
