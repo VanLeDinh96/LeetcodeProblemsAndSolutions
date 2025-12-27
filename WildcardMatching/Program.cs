@@ -1,0 +1,19 @@
+﻿using WildcardMatching;
+
+var matcher = new WildcardMatcherBruteForce();
+
+// Example test cases
+var testCases = new[]
+{
+            new { s = "aa", p = "a", expected = false },
+            new { s = "aa", p = "*", expected = true },
+            new { s = "cb", p = "?a", expected = false },
+            new { s = "adceb", p = "*a*b", expected = true },
+            new { s = "acdcb", p = "a*c?b", expected = false }
+        };
+
+foreach (var test in testCases)
+{
+    bool result = matcher.IsMatch(test.s, test.p);
+    Console.WriteLine($"IsMatch(\"{test.s}\", \"{test.p}\") = {result} (Expected: {test.expected})");
+}
