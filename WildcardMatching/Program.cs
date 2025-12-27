@@ -1,7 +1,5 @@
 ﻿using WildcardMatching;
 
-var matcher = new WildcardMatcherBruteForce();
-
 // Example test cases
 var testCases = new[]
 {
@@ -14,6 +12,6 @@ var testCases = new[]
 
 foreach (var test in testCases)
 {
-    bool result = matcher.IsMatch(test.s, test.p);
+    bool result = WildcardMatcherGreedy.IsMatch(test.s, test.p);
     Console.WriteLine($"IsMatch(\"{test.s}\", \"{test.p}\") = {result} (Expected: {test.expected})");
 }

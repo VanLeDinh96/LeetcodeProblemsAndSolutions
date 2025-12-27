@@ -1,8 +1,8 @@
 ﻿namespace WildcardMatching;
 
-public class WildcardMatcherBruteForce
+public sealed class WildcardMatcherBruteForce
 {
-    public bool IsMatch(string s, string p)
+    public static bool IsMatch(string s, string p)
     {
         return Dfs(0, 0, s, p);
     }
