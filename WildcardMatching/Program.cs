@@ -10,6 +10,8 @@ var testCases = new[]
             new { s = "acdcb", p = "a*c?b", expected = false },
             new { s = "", p = "", expected = true },
             new { s = "", p = "*", expected = true },
+            new { s = "a", p = "", expected = false },
+            new { s = "abc", p = "???", expected = true },
         };
 
 foreach (var test in testCases)
