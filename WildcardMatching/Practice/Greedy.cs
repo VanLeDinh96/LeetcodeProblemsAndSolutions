@@ -17,6 +17,7 @@ public sealed class Greedy
             else if (j < p.Length && p[j] == '*')
             {
                 asteriskIndex = j;
+                matchIndex = i; // khi gặp dấu * thì phải ghi nhớ * bắt đầu khớp với vị trí nào trong string
                 j++;
             }
             else if (asteriskIndex != -1)
