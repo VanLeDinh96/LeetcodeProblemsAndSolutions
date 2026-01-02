@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="LargestRectangleArea/LargestRectangleArea.csproj" Id="183a9b3c-b03e-41cb-8770-87f8444d892b" />
   <Project Path="NQueens/NQueens.csproj" />
   <Project Path="WildcardMatching/WildcardMatching.csproj" Id="d4324f9e-e5cc-4942-ae9e-23011fba71d0" />
 </Solution>
